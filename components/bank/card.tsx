@@ -62,9 +62,7 @@ const Card4 = () => {
             <div className="grid grid-cols-3 gap-5">
                 {
                     icons.map((icon, index) => (
-                        <div className="">
-                            <Image src={icon} alt='icon' className='w-20 bg-[#1f1f1f] p-3 rounded-lg [border:solid_1px_#555]' />
-                        </div>
+                            <Image key={index} src={icon} alt='icon' className='w-20 bg-[#1f1f1f] p-3 rounded-lg [border:solid_1px_#555]' />
                     ))
                 }
             </div>
@@ -72,11 +70,11 @@ const Card4 = () => {
         </div>
     )
 }
-
+ 
 const Card = () => {
   return (
-    <section className='flex gap-5 flex-wrap justify-around'>
-        <div className="bg-BgGrey w-[95%] max-w-[400px] mx-auto rounded-xl [border:solid_1px_#555] ">
+    <section className='flex gap-5 flex-wrap max-w-[1200px] mx-auto'>
+        <div className="bg-BgGrey w-[95%] max-w-[400px] mx-auto rounded-xl [border:solid_1px_#555]">
             <Card1 />
             <div className="px-5">
                 <h3 className="text-2xl text-PrimColor font-bold">Seamless Payments</h3>
@@ -84,7 +82,7 @@ const Card = () => {
             </div>
         </div>
         
-        <div className="bg-BgGrey w-[95%] max-w-[400px] mx-auto rounded-xl [border:solid_1px_#555] ">
+        <div className="bg-BgGrey w-[95%] max-w-[400px] mx-auto rounded-xl [border:solid_1px_#555]">
             <Card2 />
             <div className="px-5">
                 <h3 className="text-2xl text-PrimColor font-bold">Smart Investing</h3>
