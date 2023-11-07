@@ -23,14 +23,14 @@ const Nav = () => {
 
       <div className="hidden lg:block">
         <ul className='flex flex-row gap-10 text-SecColor'>
-          <li>Solutions</li>
-          <li>Learn</li>
-          <li>About</li>
+          <li className='hover:text-PrimColor'> <Link href="#">Solutions</Link></li>
+          <li className='hover:text-PrimColor'> <Link href="#">Learn</Link> </li>
+          <li className='hover:text-PrimColor'> <Link  href="#">About</Link> </li>
         </ul>
       </div>
 
-      <div className="hidden lg:flex items-center gap-10 mr-10">
-        <Link href="/">Login</Link>
+      <div className="hidden lg:flex text-PrimColor items-center gap-10 mr-10">
+        <Link href="/" className='hover:text-white'>Login</Link>
         <Button text="Get Started" />
       </div>
 
