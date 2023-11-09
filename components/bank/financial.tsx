@@ -20,7 +20,7 @@ const Finalcial = () => {
     <section className="my-20">
         <div className="px-3 max-w-[680px] mx-auto">
             <h1 className="text-PrimColor text-3xl text-center md:text-6xl">Your Financial Fredom, Your Way</h1>
-            <p className="text-SecColor text-center my-8 md:text-xl">We believe that managing your finances should be effortless and cost-effective. That's why we offer you the freedom you deserve</p>
+            <p className="text-SecColor text-center my-8 md:text-xl">We believe that managing your finances should be effortless and cost-effective. That&apos;s why we offer you the freedom you deserve</p>
         </div>
 
         <div>
@@ -39,7 +39,7 @@ const Finalcial = () => {
             />
             <Info 
               h='No bank transfer fees' 
-              p="Seamlessly transfer funds without the extra cost.Send and receive money with zero bank transfer fees."
+              p="Seamlessly transfer funds without the extra cost. Send and receive money with zero bank transfer fees."
             />
 
           </div>
