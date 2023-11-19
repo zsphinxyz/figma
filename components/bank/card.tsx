@@ -20,9 +20,9 @@ import icon6 from '@/assets/bank/card4/wallet.png'
 const Card1 = () => {
     return(
         <div className='flex flex-col text-sm lg:text-lg items-center gap-3 text-PrimColor py-14 relative z-[1] overflow-hidden'>
-            <div className="px-1 py-4 [border:solid_1px_#777] bg-[#222] text-center whitespace-break-spaces w-[85%] bg-stones-500 rounded-xl"> <Image src={logo} alt='logo' className='inline-block w-5 -rotate-90 bg-SecColor rounded-sm ' /> +$22.1 Received from Amy Jr</div>
-            <div className="px-1 py-4 [border:solid_1px_#777] bg-[#222] text-center whitespace-break-spaces w-[95%] bg-stones-500 rounded-xl text-[16px]"><Image src={logo} alt='logo' className='inline-block w-5 -rotate-90 bg-SecColor rounded-sm ' /> +$300.1 Received from John Doe</div>
-            <div className="px-1 py-4 [border:solid_1px_#777] bg-[#222] text-center whitespace-break-spaces w-[85%] bg-stones-500 rounded-xl"><Image src={logo} alt='logo' className='inline-block w-5 -rotate-90 bg-SecColor rounded-sm ' /> +$50.0 Received from John Kim</div>
+            <div className="px-1 py-4 [border:solid_1px_#777] bg-[#222] text-center whitespace-break-spaces w-[85%] bg-stones-500 rounded-xl"> <Image src={logo} alt='logo' className='inline-block w-5 -rotate-90 bg-SecColor rounded-sm ' aria-hidden/> +$22.1 Received from Amy Jr</div>
+            <div className="px-1 py-4 [border:solid_1px_#777] bg-[#222] text-center whitespace-break-spaces w-[95%] bg-stones-500 rounded-xl text-[16px]"><Image src={logo} alt='logo' className='inline-block w-5 -rotate-90 bg-SecColor rounded-sm ' aria-hidden /> +$300.1 Received from John Doe</div>
+            <div className="px-1 py-4 [border:solid_1px_#777] bg-[#222] text-center whitespace-break-spaces w-[85%] bg-stones-500 rounded-xl"><Image src={logo} alt='logo' className='inline-block w-5 -rotate-90 bg-SecColor rounded-sm ' aria-hidden /> +$50.0 Received from John Kim</div>
             <Image src={grid} alt='grid' className='absolute inset-0 top-[-30px] isolate z-[-1] w-full h-full bg-cover' />
         </div>
     )

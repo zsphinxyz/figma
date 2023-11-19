@@ -12,7 +12,7 @@ type UserT = {
 const User = ({border, img}:UserT)=> {
     return(
         <div className={`w-full flex-shrink-0 md:flex-shrink ${border && 'border-r-[1px] border-SecColor'}`}>
-            <p className="px-5 mt-10 text-sm md:text-lg">RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.</p>
+            <p className="px-5 mt-10 text-sm md:text-lg">RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I have never felt more confident about my financial future.</p>
             
             <div className="flex justify-between items-center px-5 my-5">
                 <div>
