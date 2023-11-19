@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { FaRegMessage } from "react-icons/fa6";
+
 import logo from '@/assets/bank/logo.svg'
 import grid from '@/assets/bank/Grid.png'
 import coin from '@/assets/bank/coins.png'
@@ -46,8 +48,9 @@ const Card3 = () => {
                     <h4 className='text-2xl text-PrimColor font-bold'>Wade Warren</h4>
                     <p className='text-sm text-SecColor'>Private wealth manager</p>
                 </div>
-                <div className="text-SecColor mt-3 basis-full">
+                <div className="text-SecColor flex justify-between items-center mt-3 basis-full">
                     <p className='text-base'>Send Message</p>
+                    <FaRegMessage />
                 </div>
             </div>
             <Image src={grid} alt='grid' className='absolute inset-0 top-[-30px] isolate z-[-1] w-full h-full bg-cover' />

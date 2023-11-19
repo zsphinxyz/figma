@@ -7,7 +7,7 @@ import content from '@/assets/bank/content_img2.png'
 const Confident = () => {
   return (
     <section className='max-w-[1200px] mx-auto'>
-        <div className="px-3 max-w-[680px] my-10">
+        <div className="px-3 max-w-[740px] my-10">
             <h1 className="text-PrimColor text-2xl sm:text-4xl md:text-6xl">Confidently Shape Your Financial Future</h1>
             <p className="text-SecColor my-8 text-sm sm:text-lg md:text-xl"> At RAFT, we empower you to confidently shape your financial future.Our modern approach simplifies saving and investing, making it easier than ever.</p>
         </div>

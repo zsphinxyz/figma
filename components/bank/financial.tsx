@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import contentImg from '@/assets/bank/content_img.png'
+import money1 from '@/assets/bank/money-send.svg'
+import money2 from '@/assets/bank/money-recive_2.svg'
 
 type info = {
   h: string,
@@ -24,8 +26,25 @@ const Finalcial = () => {
         </div>
 
         <div>
-          <div className="py-10 w-full xl:w-[1200px] mx-auto h-[500px] md:h-auto px-5">
+          <div className="py-10 w-full xl:w-[1200px] relative mx-auto h-[300px] sm:h-[400px] md:h-auto px-5">
             <Image src={contentImg} alt="content" className='h-full bg-cover w-full object-cover rounded-xl' />
+
+            <div className=" p-1 md:p-3 absolute left-[20%] top-10 md:top-24 bg-white rounded-lg"> 
+              <Image src={money1} alt='seng' className='w-5 md:w-10 mb-5 mx-auto' />
+              <div className="">
+                <p className="text-[11px] text-SecColor">Sent</p>
+                <p className="text-sm sm:text-md font-bold">$250.12</p>
+              </div>
+            </div>
+
+            <div className=" p-1 md:p-3 absolute right-[20%] bottom-10 md:bottom-24 bg-white rounded-lg"> 
+              <Image src={money2} alt='seng' className='w-5 md:w-10 mb-5 mx-auto' />
+              <div className="">
+                <p className="text-[11px] text-SecColor">received</p>
+                <p className="text-sm sm:text-md font-bold">$250.12</p>
+              </div>
+            </div>
+
           </div>
 
           <div className="px-5 flex gap-10 flex-col lg:flex-row lg:max-w-[1200px] mx-auto">
