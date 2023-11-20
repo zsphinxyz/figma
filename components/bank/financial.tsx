@@ -1,7 +1,9 @@
+
 import Image from 'next/image';
 import contentImg from '@/assets/bank/content_img.png'
 import money1 from '@/assets/bank/money-send.svg'
 import money2 from '@/assets/bank/money-recive_2.svg'
+import Section from './section';
 
 type info = {
   h: string,
@@ -19,7 +21,7 @@ const Info = ({h, p}:info) => {
 
 const Finalcial = () => {
   return (
-    <section className="my-20">
+    <Section style="my-20" left={false}>
         <div className="px-3 max-w-[680px] mx-auto">
             <h1 className="text-PrimColor text-3xl text-center md:text-6xl">Your Financial Fredom, Your Way</h1>
             <p className="text-SecColor text-center my-8 md:text-xl">We believe that managing your finances should be effortless and cost-effective. That&apos;s why we offer you the freedom you deserve</p>
@@ -63,7 +65,7 @@ const Finalcial = () => {
 
           </div>
         </div>
-    </section>
+    </Section>
   )
 }
 

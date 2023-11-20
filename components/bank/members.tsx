@@ -3,6 +3,7 @@ import profile1 from '@/assets/bank/profile 1.png'
 import profile2 from '@/assets/bank/profile 2.png'
 import profile3 from '@/assets/bank/profile 3.png'
 import {StaticImageData} from 'next/image'
+import Section from './section'
 
 type UserT = {
     border: boolean,
@@ -30,14 +31,14 @@ const User = ({border, img}:UserT)=> {
 
 const Members = () => {
   return (
-    <section className="bg-pop py-10 max-w-[1200px] mx-auto my-10">
+    <Section style="bg-pop py-10 max-w-[1200px] mx-auto my-10" left={false}>
         <h1 className="text-3xl text-center block md:text-5xl">Join over 3 million <br />members</h1>
         <div className="flex overflow-auto ">
             <User img={profile1} border={true} />
             <User img={profile2} border={true} />
             <User img={profile3} border={false} />
         </div>
-    </section>
+    </Section>
   )
 }
 

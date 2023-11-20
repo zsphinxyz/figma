@@ -3,10 +3,11 @@ import money from '@/assets/bank/money-send.svg'
 import wallet from '@/assets/bank/wallet-minus.png'
 import grid from '@/assets/bank/Grid.png'
 import content from '@/assets/bank/content_img2.png'
+import Section from './section'
 
 const Confident = () => {
   return (
-    <section className='max-w-[1200px] mx-auto'>
+    <Section style='max-w-[1200px] mx-auto' left={false}>
         <div className="px-3 max-w-[740px] my-10">
             <h1 className="text-PrimColor text-2xl sm:text-4xl md:text-6xl">Confidently Shape Your Financial Future</h1>
             <p className="text-SecColor my-8 text-sm sm:text-lg md:text-xl"> At RAFT, we empower you to confidently shape your financial future.Our modern approach simplifies saving and investing, making it easier than ever.</p>
@@ -53,7 +54,7 @@ const Confident = () => {
         <Image src={content} priority alt='banner' className='h-full bg-cover w-full object-cover rounded-xl' />
       </div>
 
-    </section>
+    </Section>
   )
 }
 

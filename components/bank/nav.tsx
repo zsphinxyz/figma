@@ -51,7 +51,7 @@ const Nav = () => {
       </div>
 
       <div className="hidden lg:flex text-PrimColor items-center gap-10 mr-10">
-        <Link href="/" className='hover:text-white'>Login</Link>
+        <Link href="/" className='hover:text-white hover:scale-105 transition'>Login</Link>
         <Button text="Get Started" />
       </div>
 

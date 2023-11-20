@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react"
 import {motion} from 'framer-motion'
+import Section from "./section"
 
 type TFaq = {
   que: string,
@@ -27,7 +28,7 @@ const Comp = ({que, ans}: TFaq) => {
       <motion.div 
         className="text-PrimColor overflow-hidden [border-bottom:_solid_1px_#555]"
         variants={setBar}
-        initial='close'
+        initial = 'close'
         animate = {open ? 'open' : 'close'}
         transition={{duration: 0.25, ease: 'easeIn' }}
       >
@@ -39,7 +40,7 @@ const Comp = ({que, ans}: TFaq) => {
 
 const Faq = () => {
   return (
-    <section className='px-5 max-w-[1200px] mx-auto'>
+    <Section style='px-5 max-w-[1200px] mx-auto'>
       <div className="">
         <h1 className="text-2xl text-PrimColor md:text-3xl lg:text-5xl mb-10 md:mb-16">Frequently asked questions</h1>
       </div>
@@ -76,7 +77,7 @@ const Faq = () => {
           Expert Advice: Access to financial advisors or AI-driven insights within the platform can assist in making informed investment decisions."
         />
       </div>
-    </section>
+    </Section>
   )
 }
 

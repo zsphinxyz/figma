@@ -1,4 +1,7 @@
+'use client'
 import Image from 'next/image'
+import { useRef } from 'react';
+import {motion, useInView} from 'framer-motion'
 
 import { FaRegMessage } from "react-icons/fa6";
 
@@ -15,6 +18,7 @@ import icon3 from '@/assets/bank/card4/shopping-bag.png'
 import icon4 from '@/assets/bank/card4/ticket.png'
 import icon5 from '@/assets/bank/card4/Union.png'
 import icon6 from '@/assets/bank/card4/wallet.png'
+
 
 
 const Card1 = () => {
@@ -75,9 +79,20 @@ const Card4 = () => {
 }
  
 const Card = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: true})
   return (
-    <section className='flex gap-5 flex-wrap max-w-[1030px] mx-auto'>
-        <div className="max-w-[600px] mx-auto flex-grow basis-full mb-10">
+    <motion.section
+        ref={ref}
+        className='flex gap-5 flex-wrap max-w-[1030px] mx-auto'
+        style={{
+            transform: isInView ? 'none' : 'translateX(-200px)',
+            opacity: isInView ? 1 : 0,
+            transition: 'all 0.9s ease 0.5s'
+        }}
+    >
+
+        <div ref={ref} className="max-w-[600px] mx-auto flex-grow basis-full mb-10">
             <h1 className='text-PrimColor block text-center text-2xl sm:text-5xl px-3 mb-5'>Elevate your Financial Journey with RAFT</h1>
             <p className='text-SecColor block px-3 text-sm sm:text-xl text-center'>RAFT offers a world of financial possibilities. From investments to payments, we have got you covered. Join us and unlock your financial potential today.</p>
         </div>
@@ -114,7 +129,7 @@ const Card = () => {
             </div>
         </div>
 
-    </section>
+    </motion.section>
   )
 }
 

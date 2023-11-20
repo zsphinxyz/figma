@@ -54,7 +54,7 @@ const Footer = () => {
 
       </div>
 
-      <div className="flex justify-between my-5">
+      <div className="flex justify-between my-5 max-w-[1200px] mx-auto">
         <select name="Country" className="bg-transparent text-PrimColor outline-none">
           <option className="text-slate-950 bg-transparent" value="English">English</option>
           <option className="text-slate-950 bg-transparent" value="Spanish">Spanish</option>
@@ -63,7 +63,7 @@ const Footer = () => {
           <option className="text-slate-950 bg-transparent" value="Myanmar">Myanmar</option>
         </select>
 
-        <div className="text-PrimColor text-sm">
+        <div className="text-PrimColor text-sm ">
           &copy; Raft Corp,LLC.
         </div>
       </div>

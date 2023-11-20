@@ -3,10 +3,11 @@
  import i1 from '@/assets/bank/card4/gift.png'
  import i2 from '@/assets/bank/card4/ticket.png'
  import i3 from '@/assets/bank/card4/shopping-bag.png'
+import Section from './section'
 
 const Visa = () => {
   return (
-    <section className='mx-auto max-w-[1200px]'>
+    <Section style='mx-auto max-w-[1200px]'>
 
         <div className="px-3 max-w-[680px] my-10 mx-auto">
           <p className='uppercase text-pop mb-3 text-center md:text-xl'>introduction</p>
@@ -52,7 +53,7 @@ const Visa = () => {
 
         </div>
 
-    </section>
+    </Section>
   )
 }
 
