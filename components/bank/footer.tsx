@@ -54,7 +54,7 @@ const Footer = () => {
 
       </div>
 
-      <div className="flex justify-between my-5 max-w-[1200px] mx-auto">
+      <div className="flex flex-wrap justify-between my-5 max-w-[1200px] mx-auto gap-3 sm:gap-0">
         <select name="Country" className="bg-transparent text-PrimColor outline-none">
           <option className="text-slate-950 bg-transparent" value="English">English</option>
           <option className="text-slate-950 bg-transparent" value="Spanish">Spanish</option>
@@ -63,9 +63,16 @@ const Footer = () => {
           <option className="text-slate-950 bg-transparent" value="Myanmar">Myanmar</option>
         </select>
 
+
         <div className="text-PrimColor text-sm ">
           &copy; Raft Corp,LLC.
         </div>
+        
+        <div className="text-PrimColor flex-grow sm:flex-grow-0 text-sm text-center">
+          Credit to Original <a href="https://www.figma.com/community/file/1297717078279898502/raft-fintech-website" target="_blank" className="text-blue-500 underline"> Figma Project </a> by 
+          <a href="https://www.figma.com/@adeolaadekoya" className="text-blue-500 underline" target="_blank"> adeola</a>
+        </div>
+
       </div>
 
     </footer>

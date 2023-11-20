@@ -10,22 +10,29 @@ import Members from '@/components/bank/members'
 import Faq from '@/components/bank/faq'
 import Footer from '@/components/bank/footer'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Bank',
+  description: 'Bank Application on Figma',
+}
+
 
 const page = () => {
   return (
     <>
     <Nav />
     <main>
-        <Hero />
-        <Feature />
-        <Card />
-        <Financial />
-        <Green />
-        <Confident />
-        <Visa />
-        <Members />
-        <Faq />
-        <Footer />
+      <Hero />
+      <Feature />
+      <Card />
+      <Financial />
+      <Green />
+      <Confident />
+      <Visa />
+      <Members />
+      <Faq />
+      <Footer />
     </main>
     </>
   )
