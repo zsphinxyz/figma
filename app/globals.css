@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root{
   --page-color: #070606;
   --pop-color: #2B892E;

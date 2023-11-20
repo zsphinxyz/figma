@@ -1,9 +1,12 @@
+import Section from "./section"
 
-const Button = ({text, style}:{text:string, style?:string}) => {
+const Button = ({text, style, animate}:{text:string, style?:string, animate?:boolean}) => {
   return (
-    <button className={`px-4 py-1 bg-pop text-white rounded-full hover:text-pop hover:bg-PrimColor transition cursor-pointer ${style}`}>
-        {text}
-    </button>
+    <Section animate={animate}>
+      <button className={`px-4 py-1 bg-pop text-white rounded-full hover:text-pop hover:bg-PrimColor transition cursor-pointer ${style}`}>
+          {text}
+      </button>
+    </Section>
   )
 }
 
