@@ -64,13 +64,14 @@ const Footer = () => {
         </select>
 
 
-        <div className="text-PrimColor text-sm ">
-          &copy; Raft Corp,LLC.
+        <div className="text-PrimColor text-sm md:text-md">
+          &copy; <a href="https://linktr.ee/zsphinx" target="_blank" className="text-blue-500 underline">zsphinx</a>
         </div>
         
-        <div className="text-PrimColor flex-grow sm:flex-grow-0 text-sm text-center">
-          Credit to Original <a href="https://www.figma.com/community/file/1297717078279898502/raft-fintech-website" target="_blank" className="text-blue-500 underline"> Figma Project </a> by 
-          <a href="https://www.figma.com/@adeolaadekoya" className="text-blue-500 underline" target="_blank"> adeola</a>
+        <div className="text-PrimColor flex-grow sm:flex-grow-0 text-sm text-center md:text-md">
+          Credit to Original&nbsp;
+          <a href="https://www.figma.com/community/file/1297717078279898502/raft-fintech-website" target="_blank" className="text-blue-500 underline">Figma Project</a>&nbsp;by&nbsp;
+          <a href="https://www.figma.com/@adeolaadekoya" className="text-blue-500 underline" target="_blank">adeola</a>
         </div>
 
       </div>
