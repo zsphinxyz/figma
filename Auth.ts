@@ -1,5 +1,11 @@
-// import {userName} from '@/components/bank/nav'
-// export const isAuthenticated = userName === null ? false : true;
+import {NextAuthOptions} from 'next-auth'
+import GoogleProvider from 'next-auth/providers/google'
 
-
-// authContext.tsx
+export const authOptions: NextAuthOptions = {
+    providers:[
+        GoogleProvider({
+            clientId: process.env.GOOGLE_CLIENT_ID!,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET!
+        })
+    ]
+} satisfies NextAuthOptions

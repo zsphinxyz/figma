@@ -11,6 +11,7 @@ import Faq from '@/components/bank/faq'
 import Footer from '@/components/bank/footer'
 
 import type { Metadata } from 'next'
+import ClientProviders from '@/components/bank/ClientProviders'
 
 export const metadata: Metadata = {
   title: 'Bank',
@@ -20,21 +21,21 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <>
-    <Nav />
-    <main>
-      <Hero />
-      <Feature />
-      <Card />
-      <Financial />
-      <Green />
-      <Confident />
-      <Visa />
-      <Members />
-      <Faq />
-      <Footer />
-    </main>
-    </>
+    <ClientProviders>
+      <Nav />
+      <main className='overflow-hidden'>
+        <Hero />
+        <Feature />
+        <Card />
+        <Financial />
+        <Green />
+        <Confident />
+        <Visa />
+        <Members />
+        <Faq />
+        <Footer />
+      </main>
+    </ClientProviders>
   )
 }
 

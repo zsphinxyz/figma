@@ -1,6 +1,4 @@
-
 import Image from 'next/image'
-
 import Section from './section'
 
 import logo1 from '@/assets/bank/forbes.png'
@@ -9,7 +7,13 @@ import logo3 from '@/assets/bank/bloomberg.png'
 import logo4 from '@/assets/bank/reuters.png'
 import logo5 from '@/assets/bank/cnn.png'
 
-const Feature = () => {
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/Auth';
+
+const Feature = async() => {
+  const session = await getServerSession(authOptions)
+  console.log(session)
+
   const logos = [logo1, logo2, logo3, logo4, logo5]
   return (
     <Section style='w-full mb-10'>
@@ -23,6 +27,13 @@ const Feature = () => {
               }
           </div>
         </div>
+        {
+          session && (
+            <>
+              <p className='text-green-500 text-3xl text-center'>Login</p>
+            </> 
+            )
+        }
     </Section>
   )
 }

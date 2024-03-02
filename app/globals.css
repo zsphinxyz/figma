@@ -9,6 +9,13 @@
   --secondary-text: #e5e5e5;
 }
 
+@layer components{
+  .eheader{
+    @apply text-5xl font-extrabold text-black my-3 text-center uppercase ;
+  }
+
+}
+
 body{
   background-color: var(--page-color);
   color: var(--text-color);

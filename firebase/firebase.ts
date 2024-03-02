@@ -1,8 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import {getAuth} from 'firebase/auth'
-
 const firebaseConfig = {
-  apiKey: "AIzaSyBqktb-1FnS38Yxh5wnm10jUl8ys3vREPQ",
+  apiKey: process.env.GOOGLE_API,
   authDomain: "zreact.firebaseapp.com",
   projectId: "zreact",
   storageBucket: "zreact.appspot.com",
@@ -13,4 +11,3 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);

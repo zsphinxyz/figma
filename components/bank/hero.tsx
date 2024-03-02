@@ -9,9 +9,6 @@ import banner from '@/assets/bank/banner.png'
 
 
 const Hero = () => {
-  const variant = {
-  }
-
   return (
     <section className='w-auto pt-20 pb-10 lg:py-12 mx-auto cursor-default'>
       <div className="flex flex-col justify-center mx-auto sm:w-[580px] lg:w-[1000px] items-center gap-5 lg:gap-10 relative">

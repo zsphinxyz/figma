@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,8 +14,12 @@ const config: Config = {
         pop: '#2B892E',
         PrimColor: '#e5e5e5',
         SecColor: '#989898',
-        BgGrey: '#131313'
-      }
+        BgGrey: '#131313',
+        ebg: '#F2F0F1',
+      },
+      maxWidth: {
+        monitor: '1600px'
+      },
     },
   },
   plugins: [],
