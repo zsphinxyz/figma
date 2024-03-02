@@ -14,7 +14,7 @@ function Nav() {
   return (
     <nav className="bg-white mx-auto w-full select-none ">
 
-        <div className={`w-full bg-black text-white/75 text-center py-2 flex justify-between sm:px-5 text-[12px] sm:text-lg ${ad && 'hidden'}`}>
+        <div className={`w-full bg-black text-white/75 text-center py-2 flex justify-between px-1 sm:px-5 text-[12px] sm:text-lg ${ad && 'hidden'}`}>
             <p className="w-full">Sign up and get 20% off to your first order. <Link href='#' className="text-white underline italic">Sign Up Now</Link></p>
             <button><FaPlus className="rotate-45 text-white" onClick={() => setAd(true)} /></button>
         </div>
@@ -30,7 +30,7 @@ function Nav() {
             </div>
 
             <ul 
-            className={!menu ? `hidden md:flex gap-5 lg:gap-7 mx-auto flex-1 justify-center p-0 relative`
+            className={!menu ? `hidden md:flex gap-5 lg:gap-7 xl:gap-10 mx-auto flex-1 md:text-md xl:text-xl justify-center p-0 relative`
             : `${!menu ? 'hidden' : 'flex'} z-10 w-1/2 text-2xl absolute flex-col divide-y-2 left-0 top-20 bg-white`
             }
             >
