@@ -12,13 +12,13 @@ function Hero() {
     const logos = [logo1, logo2, logo3, logo4, logo5]
   return (
     <>
-    <section className="flex flex-col md:flex-row gap-3 max-w-monitor mx-auto md:h-[calc(100vh-100px)] md:max-h-[1024px]">
+    <section className="flex flex-col md:flex-row gap-3 max-w-[3260px] mx-auto md:h-[calc(100vh-100px)] md:max-h-[1024px] bg-ebg">
         <div className="p-5 flex flex-col gap-5 md:pl-10 md:pr-2 md:justify-center lg:py-16 lg:space-y-16 basis-full cursor-default">
             <h1 className='text-4xl text-center md:text-left font-extrabold uppercase sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl md:leading-snug xl:leading-relaxed'>find clothes that matches your style</h1>
             <p className="text-esec md:text-lg lg:text-xl xl:text-2xl">
             Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
             </p>
-            <button className="group w-full md:w-[200px] bg-gradient-to-b from-black via-black/75 to-black/80 text-white py-2 text-lg lg:text-xl xl:text-2xl ring-2 ring-black rounded-full transition-all">
+            <button className="group w-full select-none md:w-[200px] bg-gradient-to-b from-black via-black/75 to-black/80 text-white py-2 text-lg lg:text-xl xl:text-2xl ring-2 ring-black rounded-full transition-all">
                 <span className='group-hover:scale-110 block transition group-active:scale-95'>Shop Now</span>
             </button>
             
@@ -40,7 +40,7 @@ function Hero() {
         </div>
     </section>
 
-    <div className="py-10 bg-black w-full max-w-monitor mx-auto flex flex-wrap justify-around gap-5">
+    <div className="py-10 bg-black max-w-[3260px]  w-full mx-auto flex flex-wrap justify-around gap-5">
         {
             logos.map( (i,j) => (
                 <Image key={j} src={i} alt='Feature Company' className='basis-1 w-40 object-contain'   />

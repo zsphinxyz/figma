@@ -16,7 +16,7 @@ const config: Config = {
         SecColor: '#989898',
         BgGrey: '#131313',
         ebg: '#F2F0F1',
-        esec: '#656565'
+        esec: '#7a7a7a'
       },
       maxWidth: {
         monitor: '1600px'

@@ -1,5 +1,6 @@
 import Hero from "@/components/ecommerce/hero";
 import Nav from "@/components/ecommerce/nav";
+import New from "@/components/ecommerce/newarrival";
 
 function Page() {
   
@@ -7,9 +8,10 @@ function Page() {
 
   return (
    
-    <div>
+    <div className="cursor-default">
         <Nav />
         <Hero />
+        <New />
     </div>
   )
 }

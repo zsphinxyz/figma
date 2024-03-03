@@ -11,7 +11,7 @@
 
 @layer components{
   .eheader{
-    @apply text-5xl font-extrabold text-black my-3 text-center uppercase ;
+    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black my-1 md:my-3 text-center uppercase;
   }
 
 }
