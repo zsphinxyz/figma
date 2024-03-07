@@ -10,7 +10,7 @@ function Product({img, desc, review, price, discountValue=undefined}:
         <p className="font-medium text-lg md:text-xl xl:text-2xl">{desc}</p>
         <div className="w-fit flex items-center">
             <span className={`overflow-hidden block select-none`} style={{maxWidth:`${(review/5 * 100)-23}%`}}>⭐⭐⭐⭐⭐</span>
-            <span className="block text-lg md:text-xl">{review}/5</span>
+            <span className="block text-sm md:text-lg">{review}/5</span>
         </div>
         <p className="text-lg md:text-xl">
             <span className="text-xl font-bold">${price}</span>

@@ -1,6 +1,8 @@
+import Browser from "@/components/ecommerce/browse";
 import Hero from "@/components/ecommerce/hero";
 import Nav from "@/components/ecommerce/nav";
 import New from "@/components/ecommerce/newarrival";
+import Reviews from "@/components/ecommerce/reviews";
 
 function Page() {
   
@@ -12,6 +14,8 @@ function Page() {
         <Nav />
         <Hero />
         <New />
+        <Browser />
+        <Reviews />
     </div>
   )
 }
