@@ -154,7 +154,7 @@ const page = () => {
 ]
   return (
     <section className="">
-        <Nav login={false}/>
+        <Nav />
 
         <div className="max-w-xl mt-5 p-5 flex items-center rounded-xl bg-[#151515] mx-auto">
             <Image src={profile} alt="profile" className="w-16 h-16 rounded-full border-2 border-SecColor" />
@@ -195,8 +195,8 @@ const page = () => {
 
         <div className="bg-[#151515] p-5 max-w-xl mx-auto h-96 rounded-xl flex-col my-5 flex gap-3 overflow-y-scroll">
           {
-            transcations.map(i => (
-              <div className="flex justify-between w-full border-b-[1px] border-[#2f2f2f] pb-3">
+            transcations.map((i, j) => (
+              <div key={j} className="flex justify-between w-full border-b-[1px] border-[#2f2f2f] pb-3">
                 <div className="text-PrimColor">
                   <p className={`text-lg ${i.send ? 'text-green-500' : 'text-red-500'}`}>{i.money}</p>
                   <p className="text-sm text-SecColor">{i.send ? 'From' : 'To'} {i.name}</p>
