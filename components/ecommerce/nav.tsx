@@ -9,7 +9,6 @@ function Nav() {
     const [menu, setMenu] = useState(false);
     const [shop, setShop] = useState(false)
     const [ad, setAd] = useState(false)
-    console.log('reRendered')
 
   return (
     <nav className="bg-white mx-auto w-full select-none ">
