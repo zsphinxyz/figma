@@ -8,7 +8,7 @@ function Footer() {
 
             <div className=" p-3 basis-1/3">
                 <h1 className="text-4xl font-extrabold uppercase mb-2">shop.co</h1>
-                <p className="">We have clothes that suits your style and which you're proud to wear. From wemen to men.</p>
+                <p className="">We have clothes that suits your style and which you&apos;re proud to wear. From wemen to men.</p>
                 
                 <div className="flex gap-3 my-3">
                   <PiTwitterLogo    className="text-3xl md:text-4xl border border-black/50 text-black/70 rounded-full p-1 shrink-0 hover:bg-black hover:text-white transition cursor-pointer"/>
