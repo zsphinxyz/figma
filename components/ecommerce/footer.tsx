@@ -58,7 +58,7 @@ function Footer() {
             </div>
         </div>
 
-        <div className="text-center mt-5 border-t border-esec py-5 flex flex-col gap-3 md:flex-row md:justify-between px-3 md:px-5">
+        <div className="text-center mt-5 border-t border-esec items-center py-5 flex flex-col gap-3 md:flex-row md:justify-between px-3 md:px-5">
             <p className="text-esec text-sm">Shop.co@2000-2023. All Rights Reserved</p>
             <div className="flex mx-auto mt-3 md:mt-0 md:ml-auto md:mr-0 gap-3">
               <SiVisa         className="text-3xl w-auto bg-white px-3 py-1 hover:bg-black hover:text-white rounded-sm" />
