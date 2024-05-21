@@ -174,29 +174,29 @@ const page = () => {
 
         <div className="bg-[#151515] p-5 max-w-xl mx-auto rounded-xl mt-5 flex gap-3 items-center justify-center">
 
-          <div className="flex justify-center flex-1 hover:bg-[#2f2f2f] cursor-default transition p-2 rounded-md flex-col items-center bg-[#1f1f1f]">
+          <div className="flex justify-center flex-1 hover:bg-[#2f2f2f] cursor-pointer transition p-2 rounded-md flex-col items-center bg-[#1f1f1f]">
             <BsGraphUpArrow className="text-3xl text-PrimColor mb-3" />
             <p className="text-SecColor text-sm">Dashboard</p>
           </div>
-          <div className="flex justify-center flex-1 hover:bg-[#2f2f2f] cursor-default transition p-2 rounded-md flex-col items-center bg-[#1f1f1f]">
+          <div className="flex justify-center flex-1 hover:bg-[#2f2f2f] cursor-pointer transition p-2 rounded-md flex-col items-center bg-[#1f1f1f]">
             <PiCurrencyCircleDollarFill className="text-3xl text-PrimColor mb-3" />
             <p className="text-SecColor text-sm">Exchange</p>
           </div>
-          <div className="flex justify-center flex-1 hover:bg-[#2f2f2f] cursor-default transition p-2 rounded-md flex-col items-center bg-[#1f1f1f]">
+          <div className="flex justify-center flex-1 hover:bg-[#2f2f2f] cursor-pointer transition p-2 rounded-md flex-col items-center bg-[#2f5f2f]">
             <SiConvertio className="text-3xl flex-grow flex-shrink-0 text-PrimColor mb-3" />
             <p className="text-SecColor text-sm">Transactions</p>
           </div>
-          <div className="flex justify-center flex-1 hover:bg-[#2f2f2f] cursor-default transition p-2 rounded-md flex-col items-center bg-[#1f1f1f]">
+          <div className="flex justify-center flex-1 hover:bg-[#2f2f2f] cursor-pointer transition p-2 rounded-md flex-col items-center bg-[#1f1f1f]">
             <FaCreditCard className="text-3xl text-PrimColor mb-3" />
             <p className="text-SecColor text-sm">Cards</p>
           </div>
           
         </div>
 
-        <div className="bg-[#151515] p-5 max-w-xl mx-auto h-96 rounded-xl flex-col my-5 flex gap-3 overflow-y-scroll">
+        <div className="bg-[#151515] max-w-xl mx-auto h-96 rounded-xl flex-col my-5 flex overflow-y-scroll">
           {
             transcations.map((i, j) => (
-              <div key={j} className="flex justify-between w-full border-b-[1px] border-[#2f2f2f] pb-3">
+              <div key={j} className="flex hover:bg-slate-500/10 px-5 py-3 justify-between w-full border-b-[1px] border-[#2f2f2f]">
                 <div className="text-PrimColor">
                   <p className={`text-lg ${i.send ? 'text-green-500' : 'text-red-500'}`}>{i.money}</p>
                   <p className="text-sm text-SecColor">{i.send ? 'From' : 'To'} {i.name}</p>
@@ -204,7 +204,7 @@ const page = () => {
 
                 <div className="ml-auto flex flex-col justify-center items-center">
                   <PiArrowDownLeftFill className={`text-PrimColor text-xl ${i.send ? 'rotate-0 text-green-500' : 'rotate-180 text-red-500'}`} />
-                  <p className="text-sm text-SecColor">{i.date} &#40;{i.time}&#41;</p>
+                  <p className="text-sm text-SecColor/50">{i.date} &#40;{i.time}&#41;</p>
                 </div>
             </div>
             ))

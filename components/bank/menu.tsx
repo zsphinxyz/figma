@@ -6,7 +6,6 @@ import Link from "next/link";
 import Button from "./button";
 import ClientProviders from "./ClientProviders";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/Auth";
 
 
 const Menu = () => {
@@ -49,22 +48,13 @@ const Menu = () => {
                 <li className="hover:bg-pop px-5 py-2 [border-bottom:solid_1px_#afafaf]">Solutions</li>
                 <li className="hover:bg-pop px-5 py-2 [border-bottom:solid_1px_#afafaf]">Learn</li>
                 <li className="hover:bg-pop px-5 py-2 [border-bottom:solid_1px_#afafaf]">About</li>
-            {
-                // userName === null ? 
-                <li className="hover:bg-pop px-5 py-2 [border-bottom:solid_1px_#afafaf]">Login</li>
-                // <li className="hover:bg-pop px-5 py-2 [border-bottom:solid_1px_#afafaf]" onClick={handleLogout}>Logout</li>
-            }
-            {
-                // login && to Profile 
-                <li className="hover:bg-pop px-5 py-2">Get Started</li>
-            }
             </ul>
         </motion.div>
 
         <div className="hidden lg:flex text-PrimColor items-center gap-10 mr-10">
         {
         //   session && 
-            <Link href="/" className='hover:text-white hover:scale-105 transition'>Login</Link>
+            <Link href="/bank/user" className='hover:text-white hover:scale-105 transition'>Login</Link>
         }
         <Button text="Get Started" animate={false}/>
       </div>

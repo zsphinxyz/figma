@@ -7,12 +7,7 @@ import logo3 from '@/assets/bank/bloomberg.png'
 import logo4 from '@/assets/bank/reuters.png'
 import logo5 from '@/assets/bank/cnn.png'
 
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/Auth';
-
 const Feature = async() => {
-  const session = await getServerSession(authOptions)
-  console.log(session)
 
   const logos = [logo1, logo2, logo3, logo4, logo5]
   return (
@@ -27,13 +22,6 @@ const Feature = async() => {
               }
           </div>
         </div>
-        {
-          session && (
-            <>
-              <p className='text-green-500 text-3xl text-center'>Login</p>
-            </> 
-            )
-        }
     </Section>
   )
 }
