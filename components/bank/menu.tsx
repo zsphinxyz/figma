@@ -4,13 +4,9 @@ import { useState } from "react";
 import {motion} from 'framer-motion'
 import Link from "next/link";
 import Button from "./button";
-import ClientProviders from "./ClientProviders";
-import { getServerSession } from "next-auth";
-
 
 const Menu = () => {
     const [open, setOpen] = useState(false);
-    // const session = await getServerSession(authOptions)
     
   const handleLogin = () => {
     try {
