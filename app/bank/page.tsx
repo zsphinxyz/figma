@@ -11,7 +11,7 @@ import Faq from '@/components/bank/faq'
 import Footer from '@/components/bank/footer'
 
 import type { Metadata } from 'next'
-import ClientProviders from '@/components/bank/ClientProviders'
+import { Suspense } from 'react'
 
 export const metadata: Metadata = {
   title: 'Bank',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <ClientProviders>
+    <Suspense fallback={'...'}>
       <Nav />
       <main className='overflow-hidden'>
         <Hero />
@@ -35,7 +35,7 @@ const page = () => {
         <Faq />
         <Footer />
       </main>
-    </ClientProviders>
+      </Suspense>
   )
 }
 

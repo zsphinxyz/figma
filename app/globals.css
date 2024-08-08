@@ -20,3 +20,29 @@ body{
   background-color: var(--page-color);
   color: var(--text-color);
 }
+
+@layer base {
+  :root {
+    --background: 20 6% 90%;
+    --foreground: 20 6% 10%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+ 
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+  }
+ 
+  .dark {
+    --background: 20 6% 10%;
+    --foreground: 20 6% 90%;
+ 
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+ 
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+  }
+}
