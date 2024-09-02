@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="bg-teal-300/30 dark:bg-teal-900/30 mt-7">
 
       <div className="w-full px-3 aspect-video max-h-64 md:max-h-80 bg-cover bg-center flex flex-col gap-10 items-center justify-center bg-blend-overlay bg-black/70" style={{backgroundImage: `url(${cover.src})`}}>
-        <p className="text-center text-2xl sm:text-3xl md:text-4xl md:leading-relaxed w-full sm:w-5/6 max-w-xl mx-auto text-white">A wonderfun <span className="text-red-500 font-medium">FIRST</span> out of home learning <span className="text-red-500 font-medium">EXPERIENCE</span> For your Child</p>
+        <p className="text-center text-2xl sm:text-3xl md:text-4xl md:leading-relaxed w-full sm:w-5/6 max-w-xl mx-auto text-white">A wonderful <span className="text-red-500 font-medium">FIRST</span> out of home learning <span className="text-red-500 font-medium">EXPERIENCE</span> For your Child</p>
         
         <div className="flex items-center w-full sm:w-2/3 justify-center max-w-lg rounded-md ring-1 ring-white overflow-hidden">
           <input type="email" autoComplete='off' placeholder='Enter email to receive news letter' className='w-full py-2 pl-2 bg-black/20 md:py-3' />
