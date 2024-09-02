@@ -4,9 +4,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTheme } from "next-themes";
+import { CgAtlasian } from "react-icons/cg";
+import { FaBars, FaMoon, FaSun } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
 
 const Lists = () => {
   const navList = ['Home', 'About us', 'Management', 'News & Events', 'Gallery', 'Contact Us'];
+
   return (
     <>
       {
@@ -31,6 +35,15 @@ export default function Nav() {
 
   const {theme, setTheme} = useTheme();
   const [open, setOpen] = useState(false);
+  const [cli, isCli] = useState(false)
+
+  useEffect(()=>{
+    isCli(true)
+    if (typeof window !== 'undefined') {
+      const localTheme = window.localStorage.getItem('theme')
+      cli && setTheme(localTheme || 'dark')
+    }
+  }, [])
 
   useEffect(()=>{
     open ? 
@@ -42,7 +55,9 @@ export default function Nav() {
   return (
 
     <nav className="flex px-2 bg-white dark:bg-background py-5 relative z-50 isolate">
-      <div className="font-extrabold text-xl px-5">LOGO</div>
+      <div className="font-extrabold text-xl px-5 flex items-center gap-2 text-slate-800 dark:text-slate-200 cursor-default select-none">
+        <CgAtlasian className="text-3xl scale-150 inline-block" /><span className="font-playpen inline-block text-2xl">Lilly</span>
+      </div>
 
       <div className="flex ml-auto flex-row-reverse md:flex-row font-playpen">
 
@@ -53,7 +68,7 @@ export default function Nav() {
 
         {/* Mobile */}
         <div className="md:hidden">
-          <button onClick={() => setOpen(!open)}>🍔</button>
+          <button onClick={() => setOpen(!open)}>{ open ? <FaTimes /> : <FaBars /> }</button>
 
             
           {/* Backdrop */}
@@ -79,7 +94,12 @@ export default function Nav() {
         </div>
 
         <div className="mx-5">
-          <button className="w-fit h-fit bg-foreground/10 " onClick={() => setTheme(() => theme == 'light' ? 'dark' : 'light')}>{theme == 'light' ? '☀️' : '🌙'}</button>
+          {
+            theme == 'light' ?
+            <button className="w-fit h-fit block bg-foreground/10 hover:bg-foreground/15 p-1 rounded-md" onClick={() => cli && setTheme('dark')}> <FaMoon /> </button>:
+            <button className="w-fit h-fit block bg-foreground/10 hover:bg-foreground/15 p-1 rounded-md" onClick={() => cli && setTheme('light')}> <FaSun /> </button>
+
+          }
         </div>
 
       </div>

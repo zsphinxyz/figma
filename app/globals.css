@@ -13,6 +13,12 @@
   .eheader{
     @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black my-1 md:my-3 text-center uppercase;
   }
+  .highlight{
+    @apply text-green-500 dark:text-red-500;
+  }
+  .school_btn {
+    @apply bg-red-500 mx-auto py-3 px-5 block mt-5 text-white hover:scale-105 transition;
+  }
 
 }
 
