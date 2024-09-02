@@ -22,7 +22,7 @@ function BlogCard({img}:{img:StaticImageData}) {
             width={480}
             height={480}
             alt="blog"
-            className="aspect-square w-1/3 md:w-full origin-center object-cover rounded-[5px] group-hover:scale-105 transition"
+            className="aspect-square h-full w-full max-w-[280px] md:w-full origin-center object-cover rounded-[5px] group-hover:scale-105 transition"
           />
         </div>
         <div className="text-sm sm:text-lg md:text-inherit">
