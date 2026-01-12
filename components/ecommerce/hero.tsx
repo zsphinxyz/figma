@@ -12,7 +12,7 @@ function Hero() {
     const logos = [logo1, logo2, logo3, logo4, logo5]
   return (
     <>
-    <section className="flex flex-col md:flex-row gap-3 max-w-[3260px] mx-auto md:h-[calc(100vh-100px)] md:max-h-[1024px] bg-ebg">
+    <section className="flex flex-col md:flex-row gap-3 max-w-[3260px] mx-auto md:min-h-[calc(100vh-100px)] md:max-h-[1024px] bg-ebg">
         <div className="p-5 flex flex-col gap-5 md:pl-10 md:pr-2 md:justify-center lg:py-16 lg:space-y-16 basis-full cursor-default">
             <h1 className='text-4xl text-center md:text-left font-extrabold uppercase sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl md:leading-snug xl:leading-relaxed'>find clothes that matches your style</h1>
             <p className="text-esec md:text-lg lg:text-xl xl:text-2xl">

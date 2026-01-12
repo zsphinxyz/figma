@@ -38,7 +38,7 @@ export default function Banner() {
     'Where curiosity meets <span class="highlight">creativity</span>, education becomes an exciting <span class="highlight">journey</span>.'
   ]
   const paragraphs = [
-    'Lilly is an outstanding Nursery & Primary school targeting educational System, helping Kids to read and write.',
+    'Rapkhen is an outstanding Nursery & Primary school targeting educational System, helping Kids to read and write.',
     'Our school is a premier institution dedicated to nurturing young minds and fostering a love for reading and writing.',
     'At our school, we lay the foundation for lifelong learning by focusing on early literacy and essential skills.'
   ]

@@ -9,7 +9,7 @@ import { IoMdMail } from "react-icons/io";
 
 export default function Footer() {
   return (
-    <footer className="bg-teal-300/30 dark:bg-teal-900/30 mt-7">
+    <footer className="bg-teal-300/30 dark:bg-teal-900/30 mt-7 max-w-7xl mx-auto">
 
       <div className="w-full px-3 aspect-video max-h-64 md:max-h-80 bg-cover bg-center flex flex-col gap-10 items-center justify-center bg-blend-overlay bg-black/70" style={{backgroundImage: `url(${cover.src})`}}>
         <p className="text-center text-2xl sm:text-3xl md:text-4xl md:leading-relaxed w-full sm:w-5/6 max-w-xl mx-auto text-white">A wonderful <span className="text-red-500 font-medium">FIRST</span> out of home learning <span className="text-red-500 font-medium">EXPERIENCE</span> For your Child</p>
@@ -35,22 +35,22 @@ export default function Footer() {
 
         <div className="min-w-full sm:min-w-min md:max-w-52">
           <h1 className="text-red-500 font-bold text-2xl mb-2">Links</h1>
-          <ul className='pl-2 *:block hover:*:underline'>
-            <Link href=''>Home</Link>
-            <Link href=''>About us</Link>
-            <Link href=''>Management</Link>
-            <Link href=''>News & Event</Link>
-            <Link href=''>Gallery</Link>
-            <Link href=''>Contact us</Link>
+          <ul className='pl-2 *:block hover:*:underline text-foreground/80'>
+            <Link href='/school'>Home</Link>
+            <Link href='/school/about'>About us</Link>
+            <Link href='/school/management'>Management</Link>
+            <Link href='/school/news'>News & Event</Link>
+            <Link href='/school/gallery'>Gallery</Link>
+            <Link href='/school/contact'>Contact us</Link>
           </ul>
         </div>
 
         <div className="min-w-full sm:min-w-min sm:mt-7 md:mt-0">
         <h1 className="text-red-500 font-bold text-2xl mb-2">Find Us</h1>
-          <ul className='pl-2'>
-            <li className="flex items-center gap-1.5"><IoLocation /> Location, Street, Township, Country,</li>
-            <li className="flex items-center gap-1.5"><IoMdMail /> info@gmail.com</li>
-            <li className="flex items-center gap-1.5"><FaPhoneVolume /> +95 999 999 999 9</li>
+          <ul className='pl-2 text-foreground/80'>
+            <li className="flex items-center mt-2 gap-1.5"><IoLocation /> Location, Street, Township, Country,</li>
+            <li className="flex items-center mt-2 gap-1.5"><IoMdMail /> info@gmail.com</li>
+            <li className="flex items-center mt-2 gap-1.5"><FaPhoneVolume /> +95 999 999 999 9</li>
             <li className="pl-6">+95 999 999 999 9</li>
           </ul>
         </div>

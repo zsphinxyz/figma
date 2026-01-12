@@ -19,7 +19,7 @@ export default function Gallery() {
     target:ref,
   })
   const value = useTransform(scrollYProgress, [0.1, 0.9], [-850, 0])
-  const v = useSpring(value, {damping: 10, stiffness: 50})
+  const v = useSpring(value, {damping: 10, stiffness: 100, restDelta: 0.1})
   return (
     <div className='py-8 overflow-hidden'>
       <Header text1='Our' text2='Gallery' />
