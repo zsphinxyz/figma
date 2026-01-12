@@ -2,24 +2,8 @@
 
 import Cover from "@/components/school/cover";
 import Header from "@/components/school/header";
-import { Suspense, useMemo } from "react";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
-import "leaflet/dist/leaflet.css"
-import "leaflet-defaulticon-compatibility"
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css"
-import dynamic from "next/dynamic";
 
 export default function Page() {
-
-  const Map = useMemo(() => dynamic(
-    () => import('@/components/school/map'),
-    {
-      loading: () => <p className="">Map is Loading...</p>,
-      ssr: false
-    }
-  ), [])
-
-
   return (
     <section className="max-w-7xl mx-auto">
 
@@ -48,9 +32,10 @@ export default function Page() {
 
           </div>
 
-          <div className="md:basis-2/3 min-h-96 bg-blue-500/20 ">
+          <div className="w-fit min-h-96 p-2">
             {/* <Suspense fallback={'Loading...'}> */}
-              <Map />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1390.0721328993743!2d96.16820286468842!3d16.787151146522817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1768189800924!5m2!1sen!2smm" width="720" height="450" allowFullScreen style={{border:0}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              {/* <Map /> */}
             {/* </Suspense> */}
           </div>
         </div>
